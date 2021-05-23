@@ -21,7 +21,7 @@ namespace InterestRates.API
             {
                 options.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "Fornecedora de Taxa de Juros",
+                    Title = "Api Taxa de Juros",
                     Description = "Api com a finalidade de disponibilizar a taxa de juros para a Api Calculadora de Juros",
                     Version = "v1"
                 });
@@ -31,15 +31,13 @@ namespace InterestRates.API
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
-            {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(options =>
-                {
-                    options.SwaggerEndpoint("/swagger/v1/swagger.json", "FornecedoraTaxaJuros.API v1");
-                    options.DocumentTitle = "Api Fornecedora de Taxa de Juros";
-                });
-            }
+            app.UseSwagger();
+            app.UseSwaggerUI(options =>
+            {
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "TaxaJuros.API v1");
+                options.DocumentTitle = "Api Taxa de Juros";
+            });
             app.UseRouting();
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>

@@ -15,6 +15,7 @@ https://interestrates.azurewebsites.net/taxajuros
 
 ## :rocket: Tecnologias
 - C#, ASP.NET Core(5.0)
+- Docker
 
 ## :bomb: Implantação em produção
 - [Microsoft Azure](https://interestrates.azurewebsites.net/swagger)

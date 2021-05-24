@@ -22,7 +22,8 @@ https://interestrates.azurewebsites.net/taxajuros
 
 ## 📝 Como executar o projeto
 Pré-requisitos: 
-- ASP.NET Core Runtime 5.0.6
+- ASP.NET Core Runtime 5.0.6 ou 
+- SDK 5.0.203(desenvolvimento)
 
 ````bash
 # clonar o repositório
